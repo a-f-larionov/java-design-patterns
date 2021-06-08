@@ -1,7 +1,8 @@
-package patterns;
+package patterns.creational;
 
 import junit.framework.TestCase;
 import org.junit.Test;
+import patterns.creational.Multiton;
 
 import java.util.Collections;
 import java.util.Set;

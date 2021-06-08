@@ -1,4 +1,4 @@
-package patterns;
+package patterns.creational;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

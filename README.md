@@ -7,7 +7,7 @@ Repository contains Java Design Patterns examples with their test.
 # List of design pattern:
 
 * Singleton
-  [LazySingleton](/src/main/java/patterns/LazySingleton.java)
+  [LazySingleton](/src/main/java/patterns/creational/LazySingleton.java)
 
 * Multiton
-  [Multiton](/src/main/java/patterns/Multiton.java)
+  [Multiton](/src/main/java/patterns/creational/Multiton.java)

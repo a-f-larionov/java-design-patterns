@@ -1,4 +1,4 @@
-package patterns;
+package patterns.creational;
 
 /**
  * Design pattern LazySingleton.

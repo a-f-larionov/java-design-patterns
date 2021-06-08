@@ -1,6 +1,7 @@
-package patterns;
+package patterns.creational;
 
 import org.junit.Test;
+import patterns.creational.LazySingleton;
 
 import java.util.Collections;
 import java.util.Set;
