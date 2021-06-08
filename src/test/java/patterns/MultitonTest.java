@@ -22,7 +22,7 @@ public class MultitonTest extends TestCase {
             multiton = Multiton.getInstance(type);
 
             assertNotNull(multiton);
-            assertSame(multiton.getClass(), Multiton.classl);
+            assertSame(multiton.getClass(), Multiton.class);
         }
     }
 
@@ -31,14 +31,24 @@ public class MultitonTest extends TestCase {
 
         Multiton multiton1, multiton2;
 
-        for (Type type : Multiton.Type.values()) {
+        for (Multiton.Type type : Multiton.Type.values()) {
             multiton1 = Multiton.getInstance(type);
             multiton2 = Multiton.getInstance(type);
 
             assertSame(multiton1, multiton2);
         }
+    }
 
+    @Test
+    public void testExpectedTypeReturned() {
         Multiton multiton;
+
+        for (Multiton.Type type : Multiton.Type.values()) {
+
+            multiton = Multiton.getInstance(type);
+
+            assertEquals(multiton.getType(), type);
+        }
     }
 
     @Test
@@ -58,7 +68,6 @@ public class MultitonTest extends TestCase {
 
         for (int i = 0; i < threadsAmount; i++) {
             executorService.submit(() -> {
-
 
                 Multiton multiton = Multiton.getInstance(type);
                 multitonSet.add(multiton);
