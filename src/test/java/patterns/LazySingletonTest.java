@@ -24,7 +24,7 @@ public class LazySingletonTest {
     }
 
     @Test
-    public void testSameObjectEveryRequest() {
+    public void testSameObjectEveryInstantiation() {
         LazySingleton lazySingleton1, lazySingleton2;
 
         lazySingleton1 = LazySingleton.getInstance();
