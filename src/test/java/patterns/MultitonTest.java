@@ -42,9 +42,9 @@ public class MultitonTest extends TestCase {
     }
 
     @Test
-    public void testSafeThread() {
+    public void testSafeThread() throws InterruptedException {
 
-        for (Multiton.Type type : Multiton.Type.values() {
+        for (Multiton.Type type : Multiton.Type.values()) {
 
             testSafeThreadForOneType(type);
         }
