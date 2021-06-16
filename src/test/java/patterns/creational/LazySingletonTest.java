@@ -1,7 +1,6 @@
 package patterns.creational;
 
 import org.junit.Test;
-import patterns.creational.LazySingleton;
 
 import java.util.Collections;
 import java.util.Set;
@@ -16,7 +15,7 @@ public class LazySingletonTest {
 
     @Test
     public void testInstantiate() {
-        LazySingleton lazySingleton1, lazySingleton2;
+        LazySingleton lazySingleton1;
 
         lazySingleton1 = LazySingleton.getInstance();
 

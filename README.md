@@ -11,3 +11,5 @@ Repository contains Java Design Patterns examples with their test.
 
 * Multiton
   [Multiton](/src/main/java/patterns/creational/Multiton.java)
+
+* ServiceLocator
